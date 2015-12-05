@@ -1,0 +1,106 @@
+*{
+	margin: 0; padding: 0;
+}
+body{
+	background-color: #333;
+}
+.box{
+	position: relative;
+	width: 900px;
+	height: 240px;
+	margin: 60px auto;
+	overflow: hidden;
+}
+.link{
+	display: inline-block;
+	padding: 0 35px;
+}
+.link .icon{
+	height: 180px;
+	width: 200px;
+	display: block;
+	transition:all ease 0.3s;
+}
+.link-miss .icon{
+	background: url(../images/mission.png) no-repeat center 0;
+}
+.link-play .icon{
+	background: url(../images/play.png) no-repeat center 0;
+}
+.link-touch .icon{
+	background: url(../images/touch.png) no-repeat center 0;
+}
+.link .icon:hover{
+	transform: rotate(360deg) scale(1.2,1.2);
+}
+.link a{
+	position: relative;
+	display: block;
+	width: 140px;
+	height: 40px;
+	border:2px solid rgba(255,255,255,0.8);
+	margin: 0px auto;
+	text-decoration: none;
+	color: #2DCB70;
+	line-height: 40px;
+	font-family: arial;
+	font-weight: bolder;
+	padding:0 20px;
+	background:url(../images/allow.png) no-repeat 120px center;
+	transition:all ease 0.3s;
+}
+.link a:hover{
+	background:url(../images/allow.png) no-repeat 140px center;
+}
+.line{
+	background-color: #fff;
+	transition:all ease 0.3s;
+}
+.link a .top{
+	position: absolute;
+	display: block;
+	top:-2px;
+	left: -100%;
+	width: 0px;	
+	height: 2px;
+}
+.link a:hover .top{
+	left: -2px;
+	width: 100%;
+}
+.link a .right{
+	position: absolute;
+	display: block;
+	top: -100%;
+	right: -2px;
+	width: 2px;
+	height: 0px;
+}
+.link a:hover .right{
+	top: -2px;
+	height: 100%;
+}
+.link a .bottom{
+	position: absolute;
+	display: block;
+	bottom: -2px;
+	right: -100%;
+	width: 0;
+	height: 2px;
+}
+.link a:hover .bottom{
+	right: -2px;
+	width: 100%;
+}
+.link a .left{
+	position: absolute;
+	display: block;
+	bottom: -100%;
+	left: -2px;
+	width: 2px;
+	height: 0px;
+}
+.link a:hover .left{
+	bottom: -2px;
+	height: 100%;
+}
